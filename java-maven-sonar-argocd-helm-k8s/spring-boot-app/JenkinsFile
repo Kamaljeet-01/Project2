@@ -11,8 +11,6 @@ pipeline {
     // Tools are defined at the pipeline level, available to all stages
     tools {
         jdk 'JDK17_for_Sonar'
-        // Assuming 'M3' is your Maven tool name configured in Jenkins
-        maven 'M3'
     }
 
     // This is the mandatory 'stages' section, correctly placed within the pipeline block
