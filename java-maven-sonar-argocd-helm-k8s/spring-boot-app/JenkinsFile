@@ -1,6 +1,5 @@
 pipeline {
-  agent {
-
+  agent any
   tools {
       jdk 'JDK17_for_Sonar' 
   }
