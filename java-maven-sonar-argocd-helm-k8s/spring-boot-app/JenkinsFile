@@ -3,7 +3,6 @@ pipeline {
 
   tools {
       jdk 'JDK17_for_Sonar' 
-      maven 'M3' 
   }
     docker {
       image 'abhishekf5/maven-abhishek-docker-agent:v1'
