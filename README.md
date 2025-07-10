@@ -7,7 +7,7 @@ Step 1: Create AWS EC2 instance (preferably t3.large)
 
 Step 2: Open Local Terminal
 - ssh into your instance with pem key
-- Install open idk 17+ :
+- Install open jdk 17+ :
 - Sudo apt install openjdk-17-jdk
 - Install jenkins 
 - curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
