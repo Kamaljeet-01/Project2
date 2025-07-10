@@ -1,4 +1,4 @@
-##Steps to create end-to-end-pipeline-jenkins:
+## Steps to create end-to-end-pipeline-jenkins:
 
 Step 1: Create AWS EC2 instance (preferably t2.large)
 - Generate .pem key to ssh connect it through your terminal
