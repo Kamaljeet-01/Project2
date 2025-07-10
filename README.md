@@ -80,13 +80,44 @@ Step 9:Creating Argo CD controller
 - Check Argo CD pods are created:
   * kubectl get pods 
 
-Step 10:Run Argo CD GUI
+Step 10:Setup Argo CD GUI
 - kubectl get svc
 - This will get you services from which you will be getting service responsible for Argo CD UI
-- 
+- kubectl edit svc (name of that service)
+- Edit these in the file:
+  * search type
+  * change type : ClusterIP to NodePort
+  * Exit
+- minikube service argocd-server (minikube service that provides you url to run argocd on browser)
+- Copy Url 
+- Open any browser > Paste the url > Argo CD GUI will start.
 
+Step 11:Open Argo CD GUI
+- Login with, user: admin
+- For password:
+  * Go to K8's terminal
+  * kubectl edit secret (Argo CD service name) > Copy admin.password
+- Since K8's passwords are base64 encrypted, so we dcrypt it:
+  * echo (Paste admin.password here) | base64 -d 
+- Copy password (Do not copy last character %)
+- Paste password on browser > Login
+- Create Application
+- Provide these detials:
+  * Name: Application name
+  * Default: Project name
+  * Sync Policy: Automatic
+  * Source: Github url of repo and path of deployment file in repo
+  * Destination > Cluster url > select available url
+  * namespace: default
+  * Create
+  
+Step 12: Check if application is deployed: 
+- Go to K8's terminal
+- kubectl get deploy
+- kubectl get pods (Pods will be running)
 
-
+Congratulations you have successfully deployed your application and and autmated the process.
+Project Completed!
 
 
 
