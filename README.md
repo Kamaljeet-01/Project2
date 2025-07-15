@@ -1,7 +1,5 @@
-An elegant, professionally formatted README is provided below, concisely explaining the steps to create the end-to-end Jenkins pipeline from your repository. It also includes the tech stack used.
 
-markdown
-# End-to-End CI/CD Pipeline with Jenkins, SonarQube, Docker, and Kubernetes
+# End-to-End CI/CD Pipeline with Jenkins
 
 This repository outlines the steps to build and automate a complete end-to-end CI/CD pipeline. The pipeline fetches code from a GitHub repository, builds it, performs static code analysis, containerizes the application using Docker, and finally deploys it to a Kubernetes cluster managed by Argo CD.
 
@@ -40,13 +38,13 @@ Next, SSH into your EC2 instance and install Jenkins.
 ssh -i "your-key.pem" ubuntu@<your-ec2-public-ip>
 ````
 
-# Install Java Development Kit (JDK)
+### Install Java Development Kit (JDK)
 ```bash
 sudo apt update
 sudo apt install openjdk-17-jdk -y
 ````
 
-# Install Jenkins
+### Install Jenkins
 ```bash
 curl -fsSL [https://pkg.jenkins.io/debian/jenkins.io-2023.key](https://pkg.jenkins.io/debian/jenkins.io-2023.key) | sudo tee \
   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
