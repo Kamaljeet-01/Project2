@@ -187,7 +187,4 @@ kubectl get deployments
 kubectl get pods
 ```
 
-Congratulations\! You have successfully created and automated an end-to-end CI/CD pipeline.
-
-```
-```
+Development and automation of an end-to-end CI/CD pipeline is completed.
