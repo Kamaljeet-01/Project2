@@ -188,3 +188,4 @@ kubectl get pods
 ```
 
 Development and automation of an end-to-end CI/CD pipeline is completed.
+Learned from : Abhishek Veeramalla sir
