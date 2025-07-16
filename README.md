@@ -1,4 +1,6 @@
 
+<img width="1321" height="659" alt="proj" src="https://github.com/user-attachments/assets/d723e3d6-13f4-4fb7-aa89-74f11b0b7591" />
+
 # End-to-End CI/CD Pipeline with Jenkins
 
 This repository outlines the steps to build and automate a complete end-to-end CI/CD pipeline. The pipeline fetches code from a GitHub repository, builds it, performs static code analysis, containerizes the application using Docker, and finally deploys it to a Kubernetes cluster managed by Argo CD.
